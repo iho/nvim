@@ -13,11 +13,16 @@ return {
   { "ellisonleao/gruvbox.nvim" },
 
   -- Configure LazyVim to load gruvbox
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "gruvbox",
+  --   },
+  -- },
+
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
+    "olimorris/onedarkpro.nvim",
+    priority = 1000, -- Ensure it loads first
   },
 
   -- change trouble config
@@ -128,6 +133,9 @@ return {
         "markdown",
         "markdown_inline",
         "python",
+        "elixir",
+        "erlang",
+        "rust",
         "query",
         "regex",
         "tsx",
